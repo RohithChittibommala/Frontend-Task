@@ -8,6 +8,13 @@
 }
 
 
+button {
+  background-color: inherit;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }

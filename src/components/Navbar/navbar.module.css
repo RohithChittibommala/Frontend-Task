@@ -15,7 +15,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    flex-basis: 40%;
+    /* flex-basis: 40%; */
 }
 
 .navbar {
@@ -30,6 +30,7 @@
     flex: 1;
     display: flex;
     justify-content: space-evenly;
+    gap: 2rem;
 }
 
 .nav-link {
@@ -46,12 +47,9 @@
     width: 0;
     height: 2px;
     background-color: #007bff;
-    transition: width 0.3s ease-in-out;
+    transition: width 0.2s ease-in-out;
 }
 
-.nav-link:hover:before {
-    width: 100%;
-}
 
 .login-button {
     padding: 0.5rem 2rem;
@@ -60,11 +58,80 @@
     border: none;
     transition: all 0.2s ease-in;
     border-radius: 0.25rem;
-    background-color: #11967e;
+    background-color: #0e9d83;
+    margin-left: 1rem;
+    font-weight: 500;
     cursor: pointer;
     /* border: 1px solid rgb(117, 203, 117); */
 }
 
 .login-button:hover {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
+    background-color: #0e7f6b;
+}
+
+.mobile-menu-btn {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.active {
+    transform: translateX(0%) !important;
+}
+
+
+@media only screen and (min-width:841px) {
+    .nav-link:hover:before {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:840px) {
+
+    .logo-container {
+        gap: 1rem;
+    }
+
+    .close-icon {
+        align-self: flex-end;
+    }
+
+    .navbar {
+        padding: 1rem;
+        border: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .navlinks-container {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+        position: absolute;
+        padding: 1rem 2rem;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 60%;
+        z-index: 1;
+        transition: all 0.25s ease-in-out;
+        transform: translateX(-100%);
+        background-color: #fff;
+    }
+
+    .mobile-navlinks-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+
 }
