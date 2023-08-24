@@ -17,39 +17,6 @@ function HeroSection() {
           </div>
         ))}
       </div>
-      <div className={styles["banner-section"]}>
-        <Carousel banners={banners} />
-      </div>
-      <div className={styles["stats-section"]}>
-        {stats.map((stat) => (
-          <div className={styles["stat"]}>
-            <img src={stat.imgUrl} alt="hat" />
-            <p>{stat.description}</p>
-          </div>
-        ))}
-      </div>
-      <div className={styles["banner-section"]}>
-        <Carousel banners={banners} />
-      </div>
-      <div className={styles["stats-section"]}>
-        {stats.map((stat) => (
-          <div className={styles["stat"]}>
-            <img src={stat.imgUrl} alt="hat" />
-            <p>{stat.description}</p>
-          </div>
-        ))}
-      </div>
-      <div className={styles["banner-section"]}>
-        <Carousel banners={banners} />
-      </div>
-      <div className={styles["stats-section"]}>
-        {stats.map((stat) => (
-          <div className={styles["stat"]}>
-            <img src={stat.imgUrl} alt="hat" />
-            <p>{stat.description}</p>
-          </div>
-        ))}
-      </div>
     </section>
   );
 }

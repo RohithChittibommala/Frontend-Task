@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./carousel.module.css";
-import { IBanner } from "../../types/bannerTypes";
+import { IBanner } from "../../types/BannerType";
 import Banner from "../Banner";
 
 interface ICarouselProps {

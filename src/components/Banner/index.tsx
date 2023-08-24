@@ -1,7 +1,6 @@
-import React from "react";
-import styles from "./banner.module.css";
 import { BsArrowRight } from "react-icons/bs";
-import { IBanner } from "../../types/bannerTypes";
+import styles from "./banner.module.css";
+import { IBanner } from "../../types/BannerType";
 
 interface IBannerProps extends IBanner {
   isActive?: boolean;
