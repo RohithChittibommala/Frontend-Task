@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./navbar.module.css";
-
 import HambugrerIcon from "../../assets/hamburger.svg";
 import LogoImg from "../../assets/tasklogo.jpg";
 import CloseIcon from "../../assets/close-icon.svg";
