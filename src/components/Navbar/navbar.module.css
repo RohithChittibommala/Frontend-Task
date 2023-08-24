@@ -1,4 +1,4 @@
-.logo-container {
+.logo-navigation-container {
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -9,6 +9,12 @@
     height: 40px;
     object-fit: contain;
     border-radius: 50%;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .navbar-right-content-container {
@@ -58,7 +64,7 @@
     border: none;
     transition: all 0.2s ease-in;
     border-radius: 0.25rem;
-    background-color: #0e9d83;
+    background-color: #323635;
     margin-left: 1rem;
     font-weight: 500;
     cursor: pointer;
@@ -67,7 +73,7 @@
 
 .login-button:hover {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
-    background-color: #0e7f6b;
+    /* background-color: #0e7f6b; */
 }
 
 .mobile-menu-btn {
@@ -91,12 +97,14 @@
 
 @media only screen and (max-width:840px) {
 
-    .logo-container {
+    .logo-navigation-container {
         gap: 1rem;
+        justify-content: space-between;
     }
 
     .close-icon {
-        align-self: flex-end;
+        /* align-self: flex-end; */
+        justify-self: flex-end;
     }
 
     .navbar {
@@ -115,23 +123,40 @@
     .mobile-menu {
         display: flex;
         position: absolute;
-        padding: 1rem 2rem;
+        padding: 1rem 0.5rem;
         flex-direction: column;
         top: 0;
         left: 0;
         height: 100vh;
-        width: 60%;
+        width: 80%;
         z-index: 1;
         transition: all 0.25s ease-in-out;
         transform: translateX(-100%);
         background-color: #fff;
+        gap: 1rem;
+        border-right: 2px solid #ccc;
     }
 
-    .mobile-navlinks-container {
+    .mobile-menu .navlinks-container {
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 0;
+        flex: auto;
+        justify-content: initial;
+        gap: 1rem;
     }
 
+    .nav-link {
+        padding: 0.5rem 1rem;
+        /* border-bottom: 1px solid #ccc; */
+        font-weight: 500;
+    }
+
+    .mobile-menu .sidebar {
+        display: flex;
+        padding: 0.5rem 1rem;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
 
 }
