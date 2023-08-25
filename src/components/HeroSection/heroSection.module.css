@@ -11,8 +11,8 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    overflow: scroll;
-    overflow-y: hidden;
+    overflow: scroll hidden;
+    width: 100%;
 }
 
 .banner-section::-webkit-scrollbar {
@@ -37,4 +37,17 @@
     border-radius: 0.5rem;
     font-size: 0.9rem;
     font-weight: 500;
+}
+
+
+
+@media only screen and (max-width:720px) {
+    .hero-section {
+        padding: 2rem;
+    }
+
+    .stats-section {
+        flex-direction: column;
+        width: 100%;
+    }
 }
