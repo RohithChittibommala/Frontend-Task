@@ -15,7 +15,11 @@ function Banner(props: IBannerProps) {
         <p>{props.description}</p>
         <Button
           title={props.buttonText}
-          styles={{ alignSelf: "flex-start" }}
+          styles={{
+            alignSelf: "flex-start",
+            backgroundColor: "#f78010",
+            fontWeight: "bold",
+          }}
           icon={<HiOutlineArrowNarrowRight />}
         />
       </div>
