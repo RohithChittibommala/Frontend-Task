@@ -1,6 +1,7 @@
 import { BsArrowRight } from "react-icons/bs";
 import { ICourse } from "../../types/CourseType";
 import styles from "./coursesSection.module.css";
+import Button from "../base/Button";
 
 interface ICourseProps extends ICourse {}
 
@@ -15,9 +16,11 @@ function Course(props: ICourseProps) {
           <h3>{props.title}</h3>
           <p>{props.description}</p>
         </div>
-        <button>
-          Join Now <BsArrowRight className={styles["icon"]} />
-        </button>
+        <Button
+          title="Join Now"
+          icon={<BsArrowRight />}
+          styles={{ width: "100%", justifyContent: "center" }}
+        />
       </div>
     </div>
   );

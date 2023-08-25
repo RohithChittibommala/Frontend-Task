@@ -1,5 +1,4 @@
 .courses-section {
-    /* width: 80%; */
     margin: 0 auto;
     padding: 3rem;
     display: flex;
@@ -10,7 +9,7 @@
 }
 
 .courses-section h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-transform: capitalize;
     text-align: center;
 }
@@ -70,27 +69,18 @@
     border-radius: 1rem;
 }
 
-.course-card button {
-    padding: 0.75rem 2rem;
-    color: #fff;
-    transition: all 0.2s ease-in;
-    border-radius: 0.25rem;
-    background-color: #232424;
-    cursor: pointer;
-    display: flex;
-    font-family: inherit;
-    font-weight: bold;
-    align-items: center;
-    justify-content: center;
-    /* margin-bottom: 0.5rem; */
-}
+@media only screen and (max-width:720px) {
 
-.course-card button:hover {
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
-    /* background-color: #0e7f6b; */
-}
+    .courses-section {
+        padding: 1rem;
+    }
 
-.icon {
-    color: #fff;
-    margin-left: 10px;
+    .courses-container {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .courses-section h2 {
+        font-size: 1.75rem;
+    }
 }
