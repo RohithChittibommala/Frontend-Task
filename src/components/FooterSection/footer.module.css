@@ -1,0 +1,27 @@
+.footer {
+    padding: 1.5rem 2rem;
+    background-color: rgba(193, 207, 255, 1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.75rem;
+}
+
+.logo {
+    background-color: #fefefe;
+    padding: 0.25rem 2rem;
+}
+
+.logo-container {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1rem;
+}
+
+
+@media only screen and (max-width:720px) {}
