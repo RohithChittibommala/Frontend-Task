@@ -12,7 +12,6 @@
 
 .image-container {
     height: 400px;
-    /* margin-right: 4rem; */
 }
 
 .banner-img {
@@ -38,4 +37,26 @@
 
 .content p {
     font-size: 1.125rem;
+}
+
+
+@media only screen and (max-width:720px) {
+
+    html {
+        font-size: 12px;
+    }
+
+    .content h2 {
+        font-size: 1.5rem;
+    }
+
+    .image-container {
+        height: 250px;
+    }
+
+    .banner {
+        padding: 1rem;
+        justify-content: flex-start;
+        flex-basis: content;
+    }
 }
