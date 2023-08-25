@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./coursesSection.module.css";
 import courses from "../../data/courses";
 import Course from "./Course";
+import Carousel from "../Carousel";
 
 function CoursesSection() {
   return (

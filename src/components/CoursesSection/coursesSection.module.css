@@ -11,26 +11,28 @@
 
 .courses-section h2 {
     font-size: 2.5rem;
+    text-transform: capitalize;
     text-align: center;
 }
 
 .courses-container {
     display: flex;
     width: 100%;
-    /* justify-content: space-evenly; */
     justify-content: center;
     gap: 2rem;
 }
 
 .course-card {
     width: 320px;
+    /* height: 450px; */
     display: flex;
     flex-direction: column;
     overflow: hidden;
     gap: 0.25rem;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0.25rem;
     /* border: 2px solid #ccc; */
-    border-radius: 0.75rem;
+    border-radius: 1rem;
     background-color: #fff;
     box-shadow: 11px -3px 17px 0px rgba(0, 0, 0, .4);
     /* padding-bottom: 0.5rem; */
@@ -47,11 +49,17 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    font-family: Poppins;
 }
 
 .content p {
     color: #696464;
     font-size: 1rem;
+    font-family: inherit;
+}
+
+.content h3 {
+    font-family: inherit;
 }
 
 
@@ -59,21 +67,19 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 1rem;
 }
 
 .course-card button {
     padding: 0.75rem 2rem;
     color: #fff;
-    outline: none;
-    border: none;
-    /* width: 80%; */
     transition: all 0.2s ease-in;
     border-radius: 0.25rem;
     background-color: #232424;
-    /* font-weight: 500; */
     cursor: pointer;
-    /* align-self: flex-start; */
     display: flex;
+    font-family: inherit;
+    font-weight: bold;
     align-items: center;
     justify-content: center;
     /* margin-bottom: 0.5rem; */
