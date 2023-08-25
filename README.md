@@ -1,19 +1,21 @@
 # Frontend Task
 
-This project is built using the React, Vanilla CSS, TypeScript (no library 🥳)
+This project is built using the React, Vanilla CSS, TypeScript (no library 🥳)\
+It is deployed [here](https://gleaming-truffle-3c3406.netlify.app/)
 
 [![My Skills](https://skillicons.dev/icons?i=react,css,ts)](https://skillicons.dev)
 
 # ScreenShots
 ## Web View
-![image](https://github.com/RohithChittibommala/Frontend-Task/assets/62145732/c32a6d78-ad62-44b5-ba89-4517cd659288)
+![image](https://github.com/RohithChittibommala/Frontend-Task/assets/62145732/93c21aaf-6bdc-448c-9630-d2faf95a86c8)
 ![image](https://github.com/RohithChittibommala/Frontend-Task/assets/62145732/5ef48053-98e1-4b41-92b2-e5d85b749300)
-![image](https://github.com/RohithChittibommala/Frontend-Task/assets/62145732/1ce3639d-35ac-4c99-a121-0ac745604337)
+![image](https://github.com/RohithChittibommala/Frontend-Task/assets/62145732/d82657d2-1e61-460e-8b20-d0e2f314e694)
 
 ## Mobile View
 ![image](https://github.com/RohithChittibommala/Frontend-Task/assets/62145732/8a19a909-e8f1-4604-967d-2ce5f51cacf4)
 ![image](https://github.com/RohithChittibommala/Frontend-Task/assets/62145732/d78899ab-d32a-4211-aa35-ee8239562404)
-![image](https://github.com/RohithChittibommala/Frontend-Task/assets/62145732/df75dac8-c909-4781-b7dc-ae2c29beaf59)
+![image](https://github.com/RohithChittibommala/Frontend-Task/assets/62145732/6077139b-cc84-42dc-8b31-082572e2b734)
+
 
 
 
