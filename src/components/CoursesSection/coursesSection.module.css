@@ -23,18 +23,15 @@
 
 .course-card {
     width: 320px;
-    /* height: 450px; */
     display: flex;
     flex-direction: column;
     overflow: hidden;
     gap: 0.25rem;
     justify-content: space-between;
     padding: 0.25rem;
-    /* border: 2px solid #ccc; */
     border-radius: 1rem;
     background-color: #fff;
     box-shadow: 11px -3px 17px 0px rgba(0, 0, 0, .4);
-    /* padding-bottom: 0.5rem; */
 }
 
 .details {
