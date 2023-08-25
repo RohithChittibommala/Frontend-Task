@@ -39,4 +39,8 @@ li {
   html {
     font-size: 13px;
   }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
