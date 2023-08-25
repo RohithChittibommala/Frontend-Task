@@ -1,9 +1,8 @@
 import React from "react";
 import styles from "./navbar.module.css";
-import HambugrerIcon from "../../assets/hamburger.svg";
 import navLinks from "../../data/navLinks";
-import { MobileNavbar } from "./MobileNavbar";
-import { LogoNavigationContainer } from "./LogoNavigationContainer";
+import MobileNavbar from "./MobileNavbar";
+import LogoNavigationContainer from "./LogoNavigationContainer";
 
 function Navbar() {
   const [isMenuVisible, setIsMenuVisible] = React.useState(true);
