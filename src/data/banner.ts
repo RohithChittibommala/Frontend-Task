@@ -8,7 +8,7 @@ const banners = [
   },
   {
     id: 2,
-    imageUrl: "/hero1.png",
+    imageUrl: "/hero.png",
     title: "<span> Get</span> <span>ready</span> to learn <br /> with us",
     description: "Start with us today",
     buttonText: "View all Courses",
@@ -22,7 +22,7 @@ const banners = [
   },
   {
     id: 4,
-    imageUrl: "/hero1.png",
+    imageUrl: "/hero.png",
     title: "<span> Get</span> <span>ready</span> to earn <br /> with us",
     description: "Start with us today",
     buttonText: "View all Courses",
