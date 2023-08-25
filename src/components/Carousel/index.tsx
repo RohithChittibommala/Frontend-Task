@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "./carousel.module.css";
 
 interface ICarouselProps {
@@ -7,18 +7,37 @@ interface ICarouselProps {
 }
 
 function Carousel(props: ICarouselProps) {
-  const [activeElementIndex, setActiveElementIndex] = React.useState(0);
-  const containerRef = React.useRef<HTMLDivElement | null>(null);
+  const [activeElementIndex, setActiveElementIndex] = useState(0);
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const ref = useRef<number | null>();
 
   const goToElement = (index: number) => {
     if (containerRef.current) {
       const elementWidth = containerRef.current.children[0].clientWidth;
+      console.log(elementWidth);
+
       containerRef.current.scrollTo({
         left: elementWidth * index,
       });
     }
+
     setActiveElementIndex(index);
   };
+
+  const startAutoScroll = () => {
+    ref.current = setInterval(() => {
+      const nextIndex = (activeElementIndex + 1) % props.elements.length;
+      goToElement(nextIndex);
+    }, 3000);
+  };
+
+  useEffect(() => {
+    if (ref.current) {
+      clearTimeout(ref.current);
+    }
+
+    startAutoScroll();
+  }, [activeElementIndex]);
 
   return (
     <div className={styles["carousel-container"]}>

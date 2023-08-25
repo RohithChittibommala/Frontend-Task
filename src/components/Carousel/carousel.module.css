@@ -33,3 +33,10 @@
 .element-ellipsis.active {
     background: #333;
 }
+
+
+@media only screen and (max-width:720px) {
+    .element-ellipses {
+        display: none;
+    }
+}
