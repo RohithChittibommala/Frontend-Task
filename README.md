@@ -1,27 +1,38 @@
-# React + TypeScript + Vite
+# Frontend Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is built using the React, Vanilla CSS, TypeScript (no library 🥳)
 
-Currently, two official plugins are available:
+[![My Skills](https://skillicons.dev/icons?i=react,css,ts)](https://skillicons.dev)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# ScreenShots
+## Web View
+![image](https://github.com/RohithChittibommala/Frontend-Task/assets/62145732/c32a6d78-ad62-44b5-ba89-4517cd659288)
+![image](https://github.com/RohithChittibommala/Frontend-Task/assets/62145732/5ef48053-98e1-4b41-92b2-e5d85b749300)
+![image](https://github.com/RohithChittibommala/Frontend-Task/assets/62145732/1ce3639d-35ac-4c99-a121-0ac745604337)
 
-## Expanding the ESLint configuration
+## Mobile View
+![image](https://github.com/RohithChittibommala/Frontend-Task/assets/62145732/8a19a909-e8f1-4604-967d-2ce5f51cacf4)
+![image](https://github.com/RohithChittibommala/Frontend-Task/assets/62145732/d78899ab-d32a-4211-aa35-ee8239562404)
+![image](https://github.com/RohithChittibommala/Frontend-Task/assets/62145732/df75dac8-c909-4781-b7dc-ae2c29beaf59)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+
+
+# Setting Up a Repository Locally
+
+This guide will walk you through the process of setting up a repository locally on your computer. By following these steps, you'll be able to work on your projects, make changes, and collaborate with others using version control.
+
+## Prerequisites
+
+- **Git**: Make sure Git is installed on your computer. You can download it from [git-scm.com](https://git-scm.com/).
+
+## Step 1: Clone the Repository
+
+1. Open your terminal or command prompt.
+2. Navigate to the directory where you want to store the repository.
+3. Run the following command to clone the repository:
+   ```bash
+   git clone <repository_url>
