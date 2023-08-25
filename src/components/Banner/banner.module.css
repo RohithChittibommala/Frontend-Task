@@ -39,28 +39,3 @@
 .content p {
     font-size: 1.125rem;
 }
-
-.content button {
-    padding: 0.75rem 2rem;
-    color: #fff;
-    outline: none;
-    border: none;
-    transition: all 0.2s ease-in;
-    border-radius: 0.25rem;
-    background-color: #232424;
-    /* font-weight: 500; */
-    cursor: pointer;
-    align-self: flex-start;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.icon {
-    color: #fff;
-    margin-left: 10px;
-}
-
-.content button:hover {
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
-}
