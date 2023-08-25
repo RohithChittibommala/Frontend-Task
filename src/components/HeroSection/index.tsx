@@ -5,7 +5,7 @@ import stats from "../../data/stats";
 import Banner from "../Banner";
 
 function HeroSection() {
-  const Banners = banners.map((banner, ind) => (
+  const Banners = banners.map((banner) => (
     <Banner key={banner.id} {...banner} />
   ));
 
