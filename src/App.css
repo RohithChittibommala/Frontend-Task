@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -9,6 +10,10 @@ html {
   padding: 0%;
   box-sizing: border-box;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 
@@ -22,4 +27,16 @@ button {
 .container {
   height: 100%;
   overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+
+@media only screen and (max-width:720px) {
+
+  html {
+    font-size: 13px;
+  }
 }
