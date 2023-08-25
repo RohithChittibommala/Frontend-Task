@@ -3,7 +3,6 @@
     background-color: #FDF9F7;
     padding: 1rem 4rem;
     display: flex;
-    /* overflow: hidden; */
     flex-direction: column;
     gap: 1.5rem;
 }
