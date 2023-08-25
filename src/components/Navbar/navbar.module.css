@@ -21,7 +21,6 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    /* flex-basis: 40%; */
 }
 
 .navbar {
@@ -68,12 +67,11 @@
     margin-left: 1rem;
     font-weight: 500;
     cursor: pointer;
-    /* border: 1px solid rgb(117, 203, 117); */
+
 }
 
 .login-button:hover {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
-    /* background-color: #0e7f6b; */
 }
 
 .mobile-menu-btn {
@@ -88,6 +86,11 @@
     transform: translateX(0%) !important;
 }
 
+.icon {
+    color: #000;
+    margin-right: 10px;
+    font-size: 30px;
+}
 
 @media only screen and (min-width:841px) {
     .nav-link:hover:before {
@@ -103,7 +106,6 @@
     }
 
     .close-icon {
-        /* align-self: flex-end; */
         justify-self: flex-end;
     }
 
@@ -148,7 +150,7 @@
 
     .nav-link {
         padding: 0.5rem 1rem;
-        /* border-bottom: 1px solid #ccc; */
+
         font-weight: 500;
     }
 
