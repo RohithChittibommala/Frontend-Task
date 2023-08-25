@@ -1,41 +1,40 @@
 import React from "react";
 import styles from "./carousel.module.css";
-import { IBanner } from "../../types/BannerType";
-import Banner from "../Banner";
 
 interface ICarouselProps {
-  banners: IBanner[];
+  elements: React.ReactElement[];
+  hideEllipses?: boolean;
 }
 
 function Carousel(props: ICarouselProps) {
-  const [activeBannerIndex, setActiveBannerIndex] = React.useState(0);
-  const containerRef = React.useRef(null);
+  const [activeElementIndex, setActiveElementIndex] = React.useState(0);
+  const containerRef = React.useRef<HTMLDivElement | null>(null);
 
-  const goToBanner = (index: number) => {
+  const goToElement = (index: number) => {
     if (containerRef.current) {
-      const bannerWidth = containerRef.current.children[0].clientWidth; // Assuming all banners have the same width
+      const elementWidth = containerRef.current.children[0].clientWidth;
       containerRef.current.scrollTo({
-        left: bannerWidth * index,
+        left: elementWidth * index,
       });
     }
-    setActiveBannerIndex(index);
+    setActiveElementIndex(index);
   };
 
   return (
     <div className={styles["carousel-container"]}>
-      <div className={styles["banner-container"]} ref={containerRef}>
-        {props.banners.map((banner, ind) => (
-          <Banner data-ind={ind} key={banner.id} {...banner} />
-        ))}
+      <div className={styles["element-container"]} ref={containerRef}>
+        {props.elements.map((Element, index) =>
+          React.cloneElement(Element, { key: index })
+        )}
       </div>
-      <div className={styles["banner-ellipses"]}>
-        {props.banners.map((child, index) => (
+      <div className={styles["element-ellipses"]}>
+        {props.elements.map((_, index) => (
           <span
             key={index}
-            className={`${styles["banner-ellipsis"]} ${
-              activeBannerIndex === index ? styles["active"] : ""
+            className={`${styles["element-ellipsis"]} ${
+              activeElementIndex === index ? styles["active"] : ""
             }`}
-            onClick={() => goToBanner(index)}
+            onClick={() => goToElement(index)}
           />
         ))}
       </div>
