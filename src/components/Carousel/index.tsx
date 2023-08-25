@@ -14,7 +14,6 @@ function Carousel(props: ICarouselProps) {
   const goToElement = (index: number) => {
     if (containerRef.current) {
       const elementWidth = containerRef.current.children[0].clientWidth;
-      console.log(elementWidth);
 
       containerRef.current.scrollTo({
         left: elementWidth * index,
