@@ -95,7 +95,7 @@
     }
 }
 
-@media only screen and (max-width:840px) {
+@media only screen and (max-width:720px) {
 
     .logo-navigation-container {
         gap: 1rem;
@@ -127,7 +127,7 @@
         flex-direction: column;
         top: 0;
         left: 0;
-        height: 100vh;
+        height: 100%;
         width: 80%;
         z-index: 1;
         transition: all 0.25s ease-in-out;
